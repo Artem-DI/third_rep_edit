@@ -1,0 +1,17 @@
+import json
+
+x = input('')
+y = input('')
+z = input('')
+
+class Model:
+
+	def save(self):
+
+		with open('use.json', 'w') as f:
+			d = dict({'title': x, 'text': y, 'author': z})
+			json.dump(d, f)
+
+s = Model()
+s.save()
+
